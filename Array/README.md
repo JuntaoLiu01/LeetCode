@@ -26,3 +26,10 @@
 	search from the last index
 	if any index in [curIndex,Min(curIndex+nums[curIndex],lastIndex] can jump to last index  
 	then curIndex can jump to last index
+	
+## Jump Game2
+	search from index 0 to len-1,
+	from index i, we can arrive at (i,i+nums[i]) 
+	then we record the max index we can arrive in (i,i+nums[i])
+	each time we arrive 
+	
