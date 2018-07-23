@@ -20,3 +20,7 @@
 		third--
 	
 	when second & third cross, increase first by 1
+	
+## 4Sum
+
+	the same idea as 3Sum Closest, just 3 to 4
