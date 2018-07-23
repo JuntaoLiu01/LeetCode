@@ -8,3 +8,15 @@
    	else :
    		j--
 
+## 3Sum Closest
+
+	sort the array in increasing order,  
+	three label:first,second,third
+	first: 0 to size - 3,first+1 <= second < third <= nums-1  
+	curSum = nums[first] + nums[second] + nums[third]  
+	if curSum < target
+		second++
+	else
+		third--
+	
+	when second & third cross, increase first by 1
