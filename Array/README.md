@@ -2,9 +2,9 @@
 	S(i,j) = Min(ai,aj) * (j-i)  
 	initial i = 0,j = len-1  
 	if S(i',j') >= S(i,j) i'>=i,j'<=j,then Min(ai',aj') >= Min(ai,aj),    
-	if ai <= aj :
+	if ai <= aj
 		then i++
-   	else :
+   	else
    		j--
 
 ## 3Sum Closest
@@ -31,5 +31,8 @@
 	search from index 0 to len-1,
 	from index i, we can arrive at (i,i+nums[i]) 
 	then we record the max index we can arrive in (i,i+nums[i])
-	each time we arrive 
+	each time i == current best index, we update the steps info and best index
 	
+## Spiral Matrix II
+	follow the sequence:right->down->left->up
+	be careful of the index  border

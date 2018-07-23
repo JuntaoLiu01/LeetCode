@@ -7,13 +7,16 @@ class Solution {
 public:
     int jump(vector<int>& nums) {
         int size = nums.size();
-        vector<int> ret(size,size);
-        ret[size-1] = 0;
-        for(int i = nums.size()-2;i >= 0;i--){
-            for(int j = min(size-1,i+nums[i]);j > i && ret[j] != size;j--){
-                ret[i] = min(ret[i],ret[j]+1);
+        int ret = 0;
+        int best = 0;
+        int nextBest = 0;
+        for(int i = 0;i < size-1;i++){
+            nextBest = max(nextBest,i+nums[i]);
+            if(best == i){
+                best = nextBest;
+                ret++;
             }
         }
-        return ret[0];
+        return ret;
     }
 };
