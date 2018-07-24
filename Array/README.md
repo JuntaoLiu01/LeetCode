@@ -36,3 +36,15 @@
 ## Spiral Matrix II
 	follow the sequence:right->down->left->up
 	be careful of the index  border
+	
+## Set Matrix Zeroes
+	the biggest challenge of the problem is how to solve it in place.  
+	the following algorithm give an O(1) solution for reference.  
+	first we search throgh the first row and first column, record whether zero exists.  
+	then we search other elements:
+		if matrix[i][j] == 0
+			set all matrix[k][j] = 0, k < i
+			set all matrix[i][m] = 0, m < j
+		else if matrix[0][j] == 0 or matrix[i][0] == 0
+			set matrix[i][j] = 0
+	finally, according to the initial flag, deciding whether set the first row and column to zero or not
