@@ -48,3 +48,7 @@
 		else if matrix[0][j] == 0 or matrix[i][0] == 0
 			set matrix[i][j] = 0
 	finally, according to the initial flag, deciding whether set the first row and column to zero or not
+	
+## Search a 2D Matrix
+	use binary search in row and column, easy to achieve
+	the time complexity is O(lg(m) + lg(n))
