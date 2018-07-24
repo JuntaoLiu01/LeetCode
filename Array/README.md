@@ -52,3 +52,10 @@
 ## Search a 2D Matrix
 	use binary search in row and column, easy to achieve
 	the time complexity is O(lg(m) + lg(n))
+	
+## Subsets
+	using recursive method:
+		select one num from nums
+		find subsets in the rest nums
+		add num to the subsets of the rest nums
+	
