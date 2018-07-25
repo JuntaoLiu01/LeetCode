@@ -59,3 +59,6 @@
 		find subsets in the rest nums
 		add num to the subsets of the rest nums
 	
+## Word Search
+	using backtracking algorithm, search from current pos, then it's adjacent cell
+	
