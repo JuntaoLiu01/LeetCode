@@ -67,3 +67,9 @@
 	search from 2 to size-1:
 		if nums[i] != nums[pos-2]
 			nums[pos++] = nums[i]
+			
+## Search in Rotated Sorted Array
+	using binary search:
+		first, find the pivot using binary search 
+		then, search the target using binary again
+		
