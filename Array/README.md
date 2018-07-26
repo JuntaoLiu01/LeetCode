@@ -61,4 +61,9 @@
 	
 ## Word Search
 	using backtracking algorithm, search from current pos, then it's adjacent cell
-	
+
+## Remove Duplicates from Sorted Array II
+	record the pos info, initially pos = 2
+	search from 2 to size-1:
+		if nums[i] != nums[pos-2]
+			nums[pos++] = nums[i]
