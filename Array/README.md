@@ -73,5 +73,12 @@
 		first, find the pivot using binary search 
 		then, search the target using binary again
 ## Spiral Matrix
-	
+	according to the sequence:
+		right->down->left->up
+		right: keep x, y < n-x
+		down : keep y, x < m-(n-y)+1
+		left : keep x, y >= m-x+1
+		up   : keep y, x >= y+1
+
+## 
 		
