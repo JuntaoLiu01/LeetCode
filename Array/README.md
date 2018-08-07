@@ -72,6 +72,7 @@
 	using binary search:
 		first, find the pivot using binary search 
 		then, search the target using binary again
+		
 ## Spiral Matrix
 	according to the sequence:
 		right->down->left->up
@@ -80,5 +81,7 @@
 		left : keep x, y >= m-x+1
 		up   : keep y, x >= y+1
 
-## 
+## Majority Element II
+	using the voting method to find the candidate
+	no more than 2 elements appears over [n/3] times 
 		
