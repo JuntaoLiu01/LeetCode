@@ -84,4 +84,15 @@
 ## [Majority Element II](ME2.cpp)
 	using the voting method to find the candidate
 	no more than 2 elements appears over [n/3] times 
+	
+## [Maximize Distance to Closest Person](MDCP.cpp)
+	set a flag:
+		-1: left has number 1
+		0 : left and right both have number 1
+		1 : rigth has number 1
+	if 0:
+		update answer with length/2
+	else:
+		update answer with length
+	Note: length means the most continuous zero num
 		
