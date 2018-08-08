@@ -100,3 +100,9 @@
 	using recursive method
 	ret[i][0] = 1,ret[i][i] = 1
 	ret[i][j] = ret[i-1][j-1] + ret[i-1][j]  i > 1
+	
+## [Product of Array Except Self](PAES.cpp)
+	if we can't use the division,we have to use multiplication method.
+	search the second times, from 0 to n-1 and from n-1 to 0
+		so we can record the result nums[0]**nums[i-1] and nums[i+1]**nums[n-1] 
+		then it's esay to combine and get the final result
