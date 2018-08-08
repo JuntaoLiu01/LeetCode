@@ -96,3 +96,7 @@
 		update answer with length
 	Note: length means the most continuous zero num
 		
+## [Pascal's Triangle](PT.cpp)
+	using recursive method
+	ret[i][0] = 1,ret[i][i] = 1
+	ret[i][j] = ret[i-1][j-1] + ret[i-1][j]  i > 1
