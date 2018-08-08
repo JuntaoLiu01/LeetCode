@@ -16,6 +16,7 @@
         "initializer_list": "cpp",
         "string": "cpp",
         "utility": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "memory": "cpp"
     }
 }
