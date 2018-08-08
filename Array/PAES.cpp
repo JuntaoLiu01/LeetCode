@@ -4,6 +4,7 @@ using namespace std;
 
 class Solution {
 public:
+    // O(n) space complexity
     vector<int> productExceptSelf(vector<int>& nums) {
         vector<int> ret(nums.size(),1);
         int pre = 1;
