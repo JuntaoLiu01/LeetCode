@@ -17,6 +17,7 @@
         "string": "cpp",
         "utility": "cpp",
         "ios": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "ostream": "cpp"
     }
 }

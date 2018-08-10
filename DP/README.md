@@ -21,3 +21,6 @@
 			dp[i] += dp[i-1]
 		if s[i-1] == '1' || (s[i-1] == '2' && '0' <= s[i] <= '6')
 			dp[i] += dp[i-2]
+
+## [Decode Ways](DW2.cpp)
+	passed 194/195 test case, need to be done
