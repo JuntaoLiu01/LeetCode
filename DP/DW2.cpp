@@ -8,8 +8,6 @@ class Solution {
 public:
     int numDecodings(string s) {
         int size = s.size();
-        if(size > 1000)
-            return 939041859;
         const int Mod = 1000000007;
         vector<long long> dp(size,0);
         if('1' <= s[0] && s[0] <= '9')
