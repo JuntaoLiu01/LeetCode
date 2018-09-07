@@ -3,45 +3,33 @@
 
 using namespace std;
 
-class Solution {
-private:
-    int findPivot(vector<int> nums){
-        int left = 0,right = nums.size()-1;
-        while(left <= right){
-            int mid = (left + right)/2;
-            if(mid == 0 || mid == nums.size()-1 ||
-                (nums[mid-1] > nums[mid] && nums[mid+1] >= nums[mid]))
-                return mid;
-            if(nums[mid] >= nums[mid-1] && nums[mid] < nums[mid+1])
-                return mid + 1;
-                right = mid-1;
-        }
-        return 0;
-    }
-    int binarySearch(vector<int> nums,int l,int r,int target){
-        while(l <= r){
-            int mid = (l+r)/2;
-            if(nums[mid] == target)
-                return true;
-            if(nums[mid] < target)
-                l = mid + 1;
-            else
-                r = mid - 1;
-        }
-
-        return false;
-    }
+class Solution {   
 public:
     bool search(vector<int>& nums, int target) {
-        if(nums.size() < 1)
+        int n = nums.size();
+        if(n < 1)
             return false;
-        int pivot = findPivot(nums);
-        cout<<pivot<<endl;
-        if(nums[pivot] == target)
-            return true;
-        if(binarySearch(nums,0,pivot-1,target))
-            return true;
-        return binarySearch(nums,pivot+1,nums.size()-1,target);
+        int left = 0,right = n - 1;
+        while(left <= right){
+            int mid = (left+right)/2;
+            if(nums[mid] == target)
+                return true;
+            else if(nums[mid] < nums[right]){
+                if(nums[mid] < target && target <= nums[right])
+                    left = mid + 1;
+                else
+                    right = mid - 1;
+            }
+            else if(nums[mid] > nums[right]){
+                if(nums[mid] > target && target >= nums[left])
+                    right = mid - 1;
+                else
+                    left = mid + 1;
+            }
+            else
+                right--;
+        }
+        return false;
     }
 };
 

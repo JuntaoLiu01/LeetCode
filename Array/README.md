@@ -85,7 +85,10 @@
 	1 2 3 4 5 6 7 0
 	
 	we can find if nums[mid] < nums[right] then the right half nums are sorted, otheriwse the left half nums are sorted. so we can compare the target with the nums[mid] to decide which part the target may be in.
-		
+	
+## [Search in Rotated Sorted Array II](SRSA2.cpp)
+	according to the method 2 on 'Search in Rotated Sorted Array', if nums[mid] == nums[right], then let right--;
+	
 ## [Spiral Matrix](SM.cpp)
 	according to the sequence:
 		right->down->left->up
