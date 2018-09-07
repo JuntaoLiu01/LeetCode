@@ -73,6 +73,19 @@
 		first, find the pivot using binary search 
 		then, search the target using binary again
 		
+	solution2:  
+	observe the following rotation of arryay [0,1,2,3,4,5,6,7]
+	0 1 2 3 4 5 6 7
+	7 0 1 2 3 4 5 6
+	6 7 0 1 2 3 4 5
+	5 6 7 0 1 2 3 4 
+	4 5 6 7 0 1 2 3 
+	3 4 5 6 7 0 1 2
+	2 3 4 5 6 7 0 1
+	1 2 3 4 5 6 7 0
+	
+	we can find if nums[mid] < nums[right] then the right half nums are sorted, otheriwse the left half nums are sorted. so we can compare the target with the nums[mid] to decide which part the target may be in.
+		
 ## [Spiral Matrix](SM.cpp)
 	according to the sequence:
 		right->down->left->up
@@ -106,3 +119,5 @@
 	search the second times, from 0 to n-1 and from n-1 to 0
 		so we can record the result nums[0]**nums[i-1] and nums[i+1]**nums[n-1] 
 		then it's esay to combine and get the final result
+		
+		
