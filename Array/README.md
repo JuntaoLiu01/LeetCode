@@ -122,5 +122,13 @@
 	search the second times, from 0 to n-1 and from n-1 to 0
 		so we can record the result nums[0]**nums[i-1] and nums[i+1]**nums[n-1] 
 		then it's esay to combine and get the final result
-		
+
+## [Construct Binary Tree from Preorder and Inorder Traversal](CBTPIT.cpp)  
+	preorder: 3 9 20 15 7
+	inorder : 9 3 15 20 7
+	first we can know that the first num(3) in preorder is the root,  
+	then find the position(1) of root in inorder,  
+	the left nums(9) are left tree and right nums(15 20 7) are right nums.	  
+	
+
 		
