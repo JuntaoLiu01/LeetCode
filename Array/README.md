@@ -133,7 +133,21 @@
 ## [Construct Binary Tree from Inorder and Postorder Traversal](CBTIPT.cpp)  
 	the same thought as the last problem. Now, the last one in postorder is the root.
 	
-	
+## [Find Minimum in Rotated Sorted Array](FMRSA.cpp)  
+	observe the following rotation of arryay [0,1,2,3,4,5,6,7]
+	0 1 2 3 4 5 6 7
+	7 0 1 2 3 4 5 6
+	6 7 0 1 2 3 4 5
+	5 6 7 0 1 2 3 4 
+	4 5 6 7 0 1 2 3 
+	3 4 5 6 7 0 1 2
+	2 3 4 5 6 7 0 1
+	1 2 3 4 5 6 7 0
+	we can find that: 
+		1. nums[mid] < nums[right], the right half is in order  
+		2. nums[mid] > nums[right], the left half is in order  
+	according to the faeture, we can using binary search method to find the answer.
+		
 	
 	
 		
