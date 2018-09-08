@@ -170,6 +170,9 @@
 	else:
 		same s last problem
 	
+## [Summary Ranges](SR.cpp)  
+	search the num from begin to end, O(n) time complexity
+	
 
 		
 	
