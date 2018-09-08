@@ -146,7 +146,13 @@
 	we can find that: 
 		1. nums[mid] < nums[right], the right half is in order  
 		2. nums[mid] > nums[right], the left half is in order  
-	according to the faeture, we can using binary search method to find the answer.
+	according to the faeture, we can using binary search method to find the answer.  
+	
+## [Find Minimum in Rotated Sorted Array II](FMRSA2.cpp)  
+	if the array contain duplicates, make some change on the above method: 
+		3. nums[mid] == nums[right], let right--
+
+
 		
 	
 	
