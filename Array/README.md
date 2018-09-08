@@ -160,8 +160,15 @@
 		4. recursive   
 		5. pop back current num  
 
-## [Combination Sum](CS3.cpp)  
-	same thought as last problem
+## [Combination Sum](CS.cpp)  
+	same thought as last problem 
+	
+## [Combination Sum II](CS2.cpp)  
+	in order to deal with dumplicates, we can sort the nums then  
+	if candidates[i] == candidates[i-1]:  
+		continue
+	else:
+		same s last problem
 	
 
 		
