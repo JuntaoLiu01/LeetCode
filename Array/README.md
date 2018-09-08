@@ -183,7 +183,10 @@
 		2. find the mimnum_num which is greater than index_num, swap them  
 		3. inverse the nums behind the index position  
 
-	
+## [Subset II](S2.cpp)  
+	using backtracing method, when it comes to dumplicates:  
+		first push the num into the tmp vector,
+		then 
 	
 
 		

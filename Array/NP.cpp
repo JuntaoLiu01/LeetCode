@@ -16,8 +16,7 @@ public:
                 break;
             index--;
         }
-        if(index > 0)
-        {
+        if(index > 0){
             index--;
             int greater = n-1;
             while(greater >= 0 && nums[greater] <= nums[index])
