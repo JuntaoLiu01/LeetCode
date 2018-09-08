@@ -151,7 +151,15 @@
 ## [Find Minimum in Rotated Sorted Array II](FMRSA2.cpp)  
 	if the array contain duplicates, make some change on the above method: 
 		3. nums[mid] == nums[right], let right--
+## [Combination Sum III](CS3.cpp)  
+	backtracking thought:  
+		1. choose current num, push it into vector tmp
+		2. if tmp.size() ==  k && n == 0, then push the tmp to res  
+		3. if n < 0, just return  
+		4. recursive   
+		5. pop back current num  
 
+	
 
 		
 	
