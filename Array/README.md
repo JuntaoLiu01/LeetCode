@@ -171,7 +171,19 @@
 		same s last problem
 	
 ## [Summary Ranges](SR.cpp)  
-	search the num from begin to end, O(n) time complexity
+	search the num from begin to end, O(n) time complexity  
+
+## [Next Permutation](NP.cpp)  
+	6 8 7 4 3 2
+	7 8 6 4 3 2 
+	7 2 3 4 6 8
+	
+	3 steps:  
+		1. search from right to left, find index_num which is not in ascending order  
+		2. find the mimnum_num which is greater than index_num, swap them  
+		3. inverse the nums behind the index position  
+
+	
 	
 
 		
