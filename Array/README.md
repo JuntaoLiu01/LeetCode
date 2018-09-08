@@ -130,5 +130,10 @@
 	then find the position(1) of root in inorder,  
 	the left nums(9) are left tree and right nums(15 20 7) are right nums.	  
 	
-
+## [Construct Binary Tree from Inorder and Postorder Traversal](CBTIPT.cpp)  
+	the same thought as the last problem. Now, the last one in postorder is the root.
+	
+	
+	
+	
 		
