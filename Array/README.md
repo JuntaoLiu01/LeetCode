@@ -207,6 +207,13 @@
 			right = mid
 		return mid
 		
+## [Find Peak Element](FPE.cpp)  
+	requires time complexity: O(lgN), use binary search,
+	if nums[mid] < nums[mid+1]:
+		peak in right half
+	else:
+		peak in left half
+		
 	
 	
 
