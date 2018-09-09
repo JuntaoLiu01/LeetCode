@@ -197,7 +197,16 @@
 	else
 		return {start, end-1}
 		
-
+## [Find the Duplicate Number](FDN.cpp)  
+	making using of binary search idea:  
+		initial: mid = (1+n)/2
+		count num which less or equal than mid --> cnt
+		if cnt <= mid:
+			than left = mid + 1
+		else:
+			right = mid
+		return mid
+		
 	
 	
 
