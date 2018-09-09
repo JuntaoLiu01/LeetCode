@@ -186,7 +186,19 @@
 ## [Subset II](S2.cpp)  
 	using backtracing method, when it comes to dumplicates:  
 		first push the num into the tmp vector,
-		then 
+		then use backtracing method, 
+		finally tick out the dumplicates  
+		
+## [Find First and Last Position of Element in Sorted Array](FFLPESA.cpp)  
+	use lower_bound to find the first num which >= target, -> start
+	use upper_boubd to find the first num which >  target. -> end
+	if start == end:
+		target not in the vector
+	else
+		return {start, end-1}
+		
+
+	
 	
 
 		
