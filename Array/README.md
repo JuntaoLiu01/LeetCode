@@ -236,6 +236,25 @@
 	use three pointers which respectively represent the first, second and third larggest num in the vector,   
 	be careful with the comparision, especially when equality occurs
 		
+## [Find All Duplicates in an Array](FADA.cpp)  
+	remember this: 
+		nums[i] should equal i+1,  
+		then if val is duplicate, then there is a confilict. so  we have: 
+			for(int i = 0;i < nums.size();i++){
+	            if(nums[i] != i+1){
+	                swap(nums[i],nums[nums[i]-1]);
+	                i--;
+	            }
+	        }
+	        vector<int> res;
+	        for(int i=0;i < nums.size();i++){
+	            if(nums[i] != i+1)
+	                res.push_back(nums[i]);
+	        }
+	        
+## 
+		
+
 	
 	
 
