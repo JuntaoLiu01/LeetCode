@@ -258,7 +258,13 @@
 ## [K-diff Pairs in an Array](KPA.cpp)  
 	use binary_search, time complexity is O(NlgN)  
 	
-
+## [Subarray Sum Equals K](SSEK.cpp)  
+	solving it by brute force  can also pass the test  
+	we can also solve it by using hash:  
+		init unorderd_map<int,int> m = {{0,1}}, 
+		if m[sum-k] exists:
+			res += 1
+		
 		
 
 	
