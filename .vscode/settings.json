@@ -21,6 +21,7 @@
         "ostream": "cpp",
         "unordered_map": "cpp",
         "__hash_table": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "unordered_set": "cpp"
     }
 }

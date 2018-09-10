@@ -222,6 +222,19 @@
 ## [Insert Delete GetRandom O(1)-Duplicates allowed](IDGOD.cpp)  
 	use unordered_set to deal with duplicates in O(1)  
 	
+## [Game of Life](GL.cpp)  
+	there are fourt states in the update process:
+		state 0: 0 -> 0
+		state 1: 1 -> 1
+		state 2: 1 -> 0
+		state 3: 0 -> 1
+		
+	so when count live cells, we can count cell whose num is 2 or 1   
+	finally update the result by mod 2
+	
+## [Third Maximum Number](TMN.cpp)  
+	use three pointers which respectively represent the first, second and third larggest num in the vector,   
+	be careful with the comparision, especially when equality occurs
 		
 	
 	
