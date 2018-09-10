@@ -252,7 +252,10 @@
 	                res.push_back(nums[i]);
 	        }
 	        
-## 
+## [Teemo Attacking](TA.cpp)  
+	O(n) solution, but it could be solved in O(lgN)
+	
+
 		
 
 	
