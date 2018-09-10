@@ -18,6 +18,9 @@
         "utility": "cpp",
         "ios": "cpp",
         "memory": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "unordered_map": "cpp",
+        "__hash_table": "cpp",
+        "chrono": "cpp"
     }
 }

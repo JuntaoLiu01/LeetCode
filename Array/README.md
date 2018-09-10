@@ -214,6 +214,15 @@
 	else:
 		peak in left half
 		
+## [Insert Delete GetRandom O(1)](IDGO.cpp)  
+	use hash map to find the target value, time complexity is O(1). 
+	space for time  
+	C++ hash table --> unordered_map
+	
+## [Insert Delete GetRandom O(1)-Duplicates allowed](IDGOD.cpp)  
+	use unordered_set to deal with duplicates in O(1)  
+	
+		
 	
 	
 
