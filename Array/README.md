@@ -255,6 +255,9 @@
 ## [Teemo Attacking](TA.cpp)  
 	O(n) solution, but it could be solved in O(lgN)
 	
+## [K-diff Pairs in an Array](KPA.cpp)  
+	use binary_search, time complexity is O(NlgN)  
+	
 
 		
 
