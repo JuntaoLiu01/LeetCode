@@ -287,6 +287,8 @@
 ## [Largest Number At Least Twice of Others](LNALTO.cpp)  
 	sort the array first.  
 
+## [Find Pivot Index](FPI.cpp)  
+	space for time, first compute sums in the array.  
 		
 
 	
