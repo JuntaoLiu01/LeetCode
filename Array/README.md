@@ -280,7 +280,11 @@
 ## [Monotonic Array](MA.cpp)  
 	first compare the first and the last num,   
 	then according the result to do other comparision.  
-			
+	
+## [Fair Candy Swap](FCS.cpp)  
+	just brute force  
+
+		
 
 	
 	
