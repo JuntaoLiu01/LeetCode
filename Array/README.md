@@ -302,6 +302,15 @@
 		else:
 			nums[i+1] = nums[i]
 			
+## [Beautiful Arrangement II](BA2.cpp)  
+	take n = 8, k = 5 as an example:
+	1 2 3 4 5 6 7 8
+	we can nums as following:
+	1 8 2 7 3 4 5 6 
+	the diff is:
+	 7 6 5 4 1 1 1 
+	the number of different diff is exactlly 5
+	
 
 	
 	
