@@ -269,7 +269,11 @@
 	copy the vector then sort the copy vector,  
 	finally compare two vectors  
 	
-## []		
+## [Array Nesting](AN.cpp)  
+	remember this:
+		if a subarray starts with num x, then first duplicate is also x.  
+	so we can record the num we have visited. if visited, it needn't be visite again, fot it's a circle.  
+			
 
 	
 	
