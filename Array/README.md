@@ -293,6 +293,17 @@
 ## [Maximum Average Subarray I](MASI.cpp)  
 	first compute the sums for the array.  
 	
+## [Non-decreasing Array](NDA.cpp)  
+	compare adjacent nums, if more than two pairs are not in ascendng order, then return false  
+	we only have one chance to change element, 
+	so if conflicts found:
+		if i==0 || nums[i+1] >= nums[i-1]:
+			nums[i] == nums[i+1]
+		else:
+			nums[i+1] = nums[i]
+			
+
+	
 	
 
 		
