@@ -284,6 +284,9 @@
 ## [Fair Candy Swap](FCS.cpp)  
 	just brute force  
 
+## [Largest Number At Least Twice of Others](LNALTO.cpp)  
+	sort the array first.  
+
 		
 
 	
