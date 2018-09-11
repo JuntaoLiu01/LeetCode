@@ -290,7 +290,8 @@
 ## [Find Pivot Index](FPI.cpp)  
 	space for time, first compute sums in the array.  
 		
-
+## [Maximum Average Subarray I](MASI.cpp)  
+	first compute the sums for the array.  
 	
 	
 
