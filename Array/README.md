@@ -273,7 +273,11 @@
 	remember this:
 		if a subarray starts with num x, then first duplicate is also x.  
 	so we can record the num we have visited. if visited, it needn't be visite again, fot it's a circle.  
-			
+	
+## [Can Place Flowers](CPF.cpp)  
+	O(N) solution with greedy algorithm
+	
+		
 
 	
 	
