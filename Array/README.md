@@ -265,7 +265,11 @@
 		if m[sum-k] exists:
 			res += 1
 		
-		
+## [Shortest Unsorted Continuous Subarray](SUCS.cpp)  
+	copy the vector then sort the copy vector,  
+	finally compare two vectors  
+	
+## []		
 
 	
 	
