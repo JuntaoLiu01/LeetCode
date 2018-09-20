@@ -34,6 +34,9 @@
         "cstdio": "cpp",
         "cstdlib": "cpp",
         "cwchar": "cpp",
-        "cwctype": "cpp"
+        "cwctype": "cpp",
+        "queue": "cpp",
+        "deque": "cpp",
+        "cmath": "cpp"
     }
 }

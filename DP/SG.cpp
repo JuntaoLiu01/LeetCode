@@ -7,7 +7,7 @@ public:
             res[i][i] = piles[i];
         for(int dis  = 1;dis < n;dis++){
             for(int i = 0;i < n-dis;i++)
-                res[i][i+dis] = max(piles[i]-res[i+1][i+dis],piles[i][i+dis-1]);
+                res[i][i+dis] = max(piles[i]-res[i+1][i+dis],piles[i+dis]-res[i][i+dis-1]);
         }
         return res[0][n-1]>0;
     }

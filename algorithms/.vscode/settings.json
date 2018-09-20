@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "bitset": "cpp",
+        "__locale": "cpp",
+        "ios": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "vector": "cpp",
+        "__split_buffer": "cpp",
+        "initializer_list": "cpp",
+        "string": "cpp",
+        "utility": "cpp",
+        "__bit_reference": "cpp",
+        "algorithm": "cpp",
+        "chrono": "cpp",
+        "memory": "cpp",
+        "locale": "cpp",
+        "__hash_table": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
+    }
+}
