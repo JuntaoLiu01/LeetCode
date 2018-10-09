@@ -37,6 +37,16 @@
         "cwctype": "cpp",
         "queue": "cpp",
         "deque": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "ratio": "cpp",
+        "__functional_base": "cpp",
+        "atomic": "cpp",
+        "limits": "cpp",
+        "locale": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "sstream": "cpp",
+        "__locale": "cpp"
     }
 }
