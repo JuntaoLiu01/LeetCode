@@ -47,6 +47,9 @@
         "tuple": "cpp",
         "type_traits": "cpp",
         "sstream": "cpp",
-        "__locale": "cpp"
+        "__locale": "cpp",
+        "stack": "cpp",
+        "unistd.h": "c",
+        "stdio.h": "c"
     }
 }
