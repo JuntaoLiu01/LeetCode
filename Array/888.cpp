@@ -9,7 +9,7 @@ public:
         for(int i = 0;i < A.size();i++)
             sumA += A[i];
         for(int i = 0;i < B.size();i++)
-            sumB += B[i];
+            sumB += B[i];        
         int dis = sumA-sumB;
         for(int i = 0;i < A.size();i++)
             for(int j = 0;j < B.size();j++){
