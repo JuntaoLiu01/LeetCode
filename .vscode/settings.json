@@ -51,5 +51,6 @@
         "stack": "cpp",
         "unistd.h": "c",
         "stdio.h": "c"
-    }
+    },
+    "python.pythonPath": "/usr/local/bin/python"
 }
