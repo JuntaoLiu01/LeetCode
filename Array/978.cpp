@@ -4,6 +4,7 @@ public:
         int n = A.size();
         vector<int> up(n,1);
         vector<int> down(n,1);
+        int res = 0;
         for(int i = 1;i < n;i++){
             if(A[i] > A[i-1])
                 up[i] = down[i-1]+1;
