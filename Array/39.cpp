@@ -1,7 +1,3 @@
-#include <vector>
-
-using namespace std;
-
 class Solution {
 private:
     void cs(vector<int>& candidates,vector<vector<int> >& res,vector<int>& tmp,int level,int target){
