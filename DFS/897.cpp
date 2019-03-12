@@ -9,21 +9,18 @@
  */
 class Solution {
 public:
-    TreeNode* increasingBST(TreeNode* root) {
-        return dfs(root,NULL);
-    }
-    TreeNode* dfs(TreeNode* root,TreeNode* tail){
+    void flatten(TreeNode* root) {
         if(!root)
-            return NULL;
-        TreeNode* newRoot = root;
+            return;
+        if(root->left)
+            flatten(root->left);
         if(root->right)
-            root->right = dfs(root->right,tail);
-        else
-            root->right = tail; 
-        if(root->left){
-            newRoot = dfs(root->left,root);
-            root->left = NULL;
-        }
-        return newRoot;
+            flatten(root->right);
+        TreeNode* t = root->right;
+        root->right = root->left;
+        root->left=NULL;
+        while(root->right)
+            root=root->right;
+        root->right=t;
     }
 };
