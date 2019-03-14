@@ -1,5 +1,12 @@
-#include <string>
-using namespace std;
+class Solution {
+public:
+    string toLowerCase(string str) {
+        string res;
+        res.resize(str.size());
+        transform(str.begin(),str.end(),res.begin(),::tolower);
+        return res;
+    }
+};
 
 class Solution {
 public:

@@ -1,5 +1,3 @@
-#include <string>
-using namespace std;
 
 class Solution {
 public:
@@ -9,12 +7,12 @@ public:
             if(n % i)
                 continue;
             string cur = s.substr(0,i);
-            bool flag = true;
-            for(int j = i;flag && j < n;j += i){
+            bool f = true;
+            for(int j = i;f && j < n;j += i){
                 if(s.substr(j,i) != cur)
-                    flag = false;
+                    f = false;
             }
-            if(flag)
+            if(f)
                 return true;
         }
         return false;
