@@ -3,7 +3,6 @@
 #include <algorithm>
 using namespace std;
 
-
 void reverse_string(string& str){
     int n = str.size();
     for(int i = 0;i < n/2;i++){
