@@ -1,11 +1,18 @@
 class Solution {
 public:
-    int maxScoreSightseeingPair(vector<int>& A) {
-        int n = A.size();
-        int res = 0,most = 0;
-        for(int i = 0;i < n;i++){
-            res = max(res,A[i]+most-i);
-            most = max(most,A[i]+i);
+    string removeOuterParentheses(string S) {
+        int count = 0;
+        int pre = 0;
+        string res;
+        for(int i = 0;i < S.size();i++){
+            if(S[i]=='(')
+                count++;
+            if(S[i]==')')
+                count--;
+            if(count == 0){
+                res += S.substr(pre+1,i-pre-1);
+                pre = i+1;
+            }
         }
         return res;
     }

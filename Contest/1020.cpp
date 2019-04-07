@@ -1,31 +1,42 @@
 class Solution {
 public:
-    bool canThreePartsEqualSum(vector<int>& A) {
-        int n = A.size();
-        vector<int> sum(n,0);
-        for(int i = 0;i < n;i++){
-            if(i == 0)
-                sum[i] = A[i];
-            else
-                sum[i] = A[i]+sum[i-1];
+    int m,n;
+    int xy[4][2] = {{-1,0},{0,-1},{0,1},{1,0}};
+    void dfs(vector<vector<int> >& A,vector<vector<int> >& visited,int x,int y){
+        if(visited[x][y])
+            return;
+        visited[x][y] = 1;
+        for(int i = 0;i < 4;i++){
+            int curx = x+xy[i][0];
+            int cury = y+xy[i][1];
+            if(curx<0 || cury<0 || curx>=m || cury>=n || !A[curx][cury])
+                continue;
+            dfs(A,visited,curx,cury);
         }
-        if(sum[n-1]%3)
-            return false;
-        int t = sum[n-1]/3;
-        int i = -1,j = -1;
-        for(int index = 0;index < n;index++){
-            if(i == -1){
-                if(sum[index]==t)
-                    i = index;
-            }
-            else if(j == -1){
-                if(sum[index]-sum[i]==t)
-                    j = index;
+    }
+    int numEnclaves(vector<vector<int> >& A) {
+        m = A.size();
+        n = A[0].size();
+        vector<vector<int> > visited(m,vector<int>(n,0));
+        int res = 0;
+        for(int i = 0;i < m;i++)
+            if(A[i][0])
+                dfs(A,visited,i,0);
+        for(int i = 0;i < m;i++)
+            if(A[i][n-1])
+                dfs(A,visited,i,n-1);
+        for(int j = 0;j < n;j++)
+            if(A[0][j])
+                dfs(A,visited,0,j);
+        for(int j = 0;j < n;j++)
+            if(A[m-1][j])
+                dfs(A,visited,m-1,j);
+        for(int i = 0;i < m;i++){
+            for(int j = 0;j < n;j++){
+                if(A[i][j] && !visited[i][j])
+                    res++;
             }
         }
-        // cout<<i<<" "<<j<<endl;
-        if(j == -1)
-            return false;
-        return sum[n-1]-sum[j]==t;
+        return res;
     }
 };
