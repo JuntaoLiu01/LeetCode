@@ -1,32 +1,54 @@
+struct  Trie
+{
+    bool isWord;
+    Trie *children[26];
+};
+
+Trie* create(){
+    Trie* node = new Trie();
+    node->isWord = false;
+    for(int i = 0;i < 26;i++)
+        node->children[i] = NULL;
+    return node;
+}
+void insert(Trie* root,string& s){
+    Trie* node = root;
+    for(int i = s.size()-1;i >= 0;i--){
+        if(!node->children[s[i]-'a'])
+            node->children[s[i]-'a'] = create();
+        node = node->children[s[i]-'a'];
+    }
+    node->isWord = true;
+}
+
+bool search(Trie* root,string& s){
+    Trie* node = root;
+    for(int i = s.size()-1;i >= 0;i--){
+        Trie* next = node->children[s[i]-'a'];
+        if(next){
+            if(next->isWord)
+                return true;
+            node = next;
+        }
+        else
+            return false;
+    }
+    return false;
+}
+
 class StreamChecker {
 public:
-    string q;
-    unordered_map<int,unordered_set<string>> m;
-    int maxl;
+    Trie* root;
+    string str;
     StreamChecker(vector<string>& words) {
-        maxl = 0;
-        for(string w:words){
-            maxl = max(int(w.length()),maxl);
-            m[w.length()].insert(w);
-        }
+        root = create();
+        for(string w:words)
+            insert(root,w);
     }
     
     bool query(char letter) {
-        q += string(1,letter);
-        if(q.length() > maxl){
-             q = q.substr(q.length()-maxl,maxl);
-            for(auto p:m){
-                if(p.second.count(q.substr(q.length()-p.first,p.first)))
-                    return true;
-            }
-            return false;
-        }
-        for(auto p:m){
-            if(q.length() >= p.first)
-                if(p.second.count(q.substr(q.length()-p.first,p.first)))
-                    return true;
-        } 
-        return false;
+        str.push_back(letter);
+        return search(root,str);
     }
 };
 
